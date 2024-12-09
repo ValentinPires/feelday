@@ -464,32 +464,20 @@ padding: 30px 0;
     justify-content: center;
     margin-bottom: 50px;
     gap: 300px;
+    
    
 }
 
 .producto{
-          
+    text-align: center;
     padding: 25px;
     box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
     background-color: hsl(78, 100%, 79%);
     border-radius: 25px;
-}
-
-/*.btn-1{
-    padding: 10px 20px;
-    color: rgb(80, 76, 76); 
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration:none;
-    transition: all 0.3s ease;
+    width: 350px;
     
 }
 
-.btn-1:hover{
-    text-decoration: underline;
-}*/
 
 .producto button{
     padding: 1rem;
@@ -528,6 +516,18 @@ padding: 30px 0;
     margin-bottom: 15px;
 }
 
+.producto h2{
+    margin: 0;
+    color: #323337;
+    font-size: 20px;
+   padding: 20px;
+  
+    
+}
+
+.producto p{
+    text-align: center;
+}
 
 /*FOTOS PRODUCTOS*/
 
@@ -550,18 +550,29 @@ padding: 30px 0;
     width: 100%;
     padding: 0 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si la pantalla es pequeña */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes */
    
 }
 
 #fotos-producto .product-info p{
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
+    margin: 10px 0 0; /* Márgenes para separar el texto de la imagen */
+  padding: 10px;
+  font-size: 18px; /* Tamaño de fuente ajustable */
+  color: #333; /* Color de texto */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  border-radius: 5px; /* Bordes redondeados para el texto */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  transition: background-color 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
 }
 
 #fotos-producto .product-info img{
-    text-align: center;
-    margin-top: 50px;
+    position: relative; /* Para posicionar el texto debajo de la imagen */
+  width: 200px; /* Ajusta el tamaño de las fotos según lo necesites */
+  text-align: center; /* Centra el texto debajo de la imagen */
+  /* Bordes redondeados para las imágenes */
+  overflow: hidden;
 }
 
 #fotos-producto .product-info img{
@@ -594,6 +605,42 @@ padding: 30px 0;
 
 
 
+/* Estilo para el botón */
+.volver-al-inicio {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(145deg, #6a7dff, #4c63cc); /* Fondo con gradiente */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px; /* Bordes redondeados para un estilo moderno */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; /* Hace el texto todo en mayúsculas */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), -4px -4px 10px rgba(255, 255, 255, 0.3); /* Sombras para dar profundidad */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Efecto hover */
+  .volver-al-inicio:hover {
+    background: linear-gradient(145deg, #4c63cc, #6a7dff); /* Cambio de gradiente al pasar el ratón */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.4); /* Aumento de las sombras */
+    transform: translateY(-3px); /* Efecto de movimiento hacia arriba */
+  }
+  
+  /* Efecto active (cuando se hace clic en el botón) */
+  .volver-al-inicio:active {
+    transform: translateY(0); /* Elimina el movimiento cuando se hace clic */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Efecto de presionado */
+  }
+  
+  /* Estilo para colocar el botón en la esquina inferior derecha */
+  .volver-al-inicio.fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
 
 /*FOOTER*/
 .footer{
@@ -650,9 +697,16 @@ link h3{
     text-align: center;
     border-radius: 10px;
     margin: 20px auto;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.info-contacto{
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contacto h2 {
@@ -733,6 +787,41 @@ link h3{
     background-color: #45a049;
 }
 
+
+
+
+
+
+
+
+#quienes-somos {
+    padding: 40px;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    margin: 30px auto;
+    max-width: 800px; /* Limitar el ancho máximo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  /* Estilo del título */
+  #quienes-somos h2 {
+    font-size: 36px; /* Tamaño grande para el título */
+    font-weight: bold;
+    color: #4c63cc; /* Color atractivo para el título */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del párrafo */
+  #quienes-somos p {
+    font-size: 18px;
+    line-height: 1.6; /* Aumentar el espacio entre líneas */
+    color: #333; /* Color de texto suave */
+    margin-bottom: 20px;
+    padding: 0 20px; /* Añadir espacio en los laterales */
+  }
+  
+ 
 
 
 @media(max-width: 991px){
