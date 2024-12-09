@@ -621,6 +621,7 @@ padding: 30px 0;
     transition: all 0.3s ease; /* Transición suave para los efectos */
     cursor: pointer;
     text-align: center;
+    width: auto;
   }
   
   /* Efecto hover */
@@ -693,103 +694,51 @@ link h3{
 
 
 .contacto {
-    padding: 40px;
+    padding: 80px;
     background-color: #f4f4f4;
     text-align: center;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 10px auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los divs */
+   
 }
 
-.info-contacto{
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
+.icon-item{
+   
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+   /* Espacio entre el ícono y el texto */
 }
 
 .contacto h2 {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: #333;
     font-size: 2em;
+    margin-top: -50px;
 }
 
-.telefono-icon{
+.icon{
     width: 40px;
     height: 40px;
     margin-right: 10px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.instagram-icon{
-    width: 40px;
-    height: 40px;
 
-}
-
-
-.mail-icon{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 250px;
-    top: 330px;
-
-}
-
-.info-contacto p {
-    margin: 10px 0;
+.icon-item p {
+    
     font-size: 1.2em;
 }
-
-.info-contacto a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-.info-contacto a:hover {
-    text-decoration: underline;
-}
-
-.formulario-contacto {
-    margin-top: 20px;
-}
-
-.formulario-contacto label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.formulario-contacto input, 
-.formulario-contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.formulario-contacto button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.formulario-contacto button:hover {
-    background-color: #45a049;
-}
-
-
-
 
 
 
