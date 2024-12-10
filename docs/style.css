@@ -91,10 +91,9 @@ body{
 }
 
 #body-compra .container-title{
-    padding: 30px;
-    background-color: #eeee;
+    padding: 50px;
     margin-bottom: 50px;
-    color: #2222;
+
 }
 
 #body-compra main{
@@ -357,6 +356,28 @@ padding: 30px 0;
         align-items: center;
         flex-wrap: wrap;
 }
+
+.navbar-compra ul li{
+  
+    float: left;
+    top: 0; /* Fija el menú en la parte superior */
+    left: 0; /* Fija el menú en la esquina izquierda */
+    display: flex; /* Mantiene la disposición en línea de los elementos */
+}
+
+.navbar-compra ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+    font-weight: 600;
+
+}
+
+.navbar-compra ul li a:hover{
+    color: #8a7bce;
+}
+ 
 
 
 .navbar ul li{
@@ -672,26 +693,6 @@ link h3{
 
 /*CONTACTO*/
 
-.contacto navbar ul li{
-    position: relative;
-    float: left;
-}
-
-.navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #FFFDFC;
-    display: block;
-    font-weight: 600;
-
-}
-
-.navbar ul li a:hover{
-    color: #CE967B;
-}
- 
-
-
 
 .contacto {
     padding: 80px;
@@ -774,121 +775,106 @@ link h3{
  
 
 
-@media(max-width: 991px){
-
-    .menu{
-        padding: 30px;
+/* General: Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px; /* Agregar espacio lateral en dispositivos más pequeños */
     }
 
-    .menu label{
-        display: initial;
+    .compra h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color:#323337;
-        display: none;
+    .btn-wsp {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+        bottom: 20px;
+        right: 20px;
     }
 
-    .menu .navbar ul li{
-        width: 100%;
+    #body-compra main {
+        flex-direction: column; /* Cambiar a columna para mejor visualización en móviles */
     }
 
-    @menu:checked ~ .navbar{
-        display: initial;
+    #body-compra .img-cama-frente,
+    #body-compra .img-silla-frente {
+        max-width: 100%; /* Asegurar que las imágenes no excedan el ancho de la pantalla */
     }
 
-    .header{
-        min-height: 0vh;
+    .header-content h1 {
+        font-size: 40px; /* Reducir el tamaño del encabezado */
+        line-height: 50px;
+        padding: 0 20px;
     }
 
-    .header-content{
-        padding: 100px 30px;
+    .header-content p {
+        font-size: 18px;
+        padding: 0 15px;
     }
 
-    .header-content p{
-        padding: 0;
+    .product-content h2 {
+        font-size: 35px;
+        padding: 0 15px;
     }
 
-    .producto{
-        padding: 30px;
-    }
-
-    .producto-content h2{
-        padding: 0;
-    }
-
-    .txt-p{
-        padding: 0;
-    }
-
-    .producto-group{
+    .product-group {
         flex-direction: column;
-        margin-bottom: 0;
+        gap: 20px; /* Reducir la separación entre productos */
     }
 
-    .producto-img{
-        display: none;
-    }
-
-    .services{
-        padding: 30px;
-    }
-
-    .services-content p{
-        padding: 0;
-    }
-
-    .services-group{
+    .menu {
         flex-direction: column;
-        margin-bottom: 0;
+        align-items: flex-start;
     }
 
-    .services-1{
-        margin-bottom: 25px;
+    .navbar ul li {
+        float: none;
     }
 
-    .general{
-        flex-direction: column;
+    .navbar ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* General: Adaptación para tabletas */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%; /* Ajustar el contenedor para tabletas */
     }
 
-    .general-1{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
+    #body-compra main {
+        gap: 20px; /* Reducir la separación en la estructura principal */
     }
 
-    .general-2, .general-3{
-        display: none;
+    .header-content h1 {
+        font-size: 60px; /* Ajustar el tamaño del encabezado */
     }
 
-    .blog{
-        padding: 30px;
+    .btn-metodo-pago button {
+        width: 100%; /* Botones de pago adaptados al ancho disponible */
     }
 
-    .blog-content{
-        flex-direction: column;
+    .product-group {
+        gap: 50px; /* Ajustar el espacio entre productos */
+    }
+}
+
+/* Consultas específicas para pantallas más grandes */
+@media (min-width: 1200px) {
+    .catalogo {
+        padding: 120px 0; /* Espaciado adicional para pantallas más grandes */
     }
 
-    .blog-1{
-        padding: 0;
+    .product-content h2 {
+        font-size: 60px;
     }
 
-    .footer{
-        padding: 30px;
+    .product-group {
+        gap: 400px; /* Espaciar más los elementos en pantallas grandes */
     }
-
-    .footer-content{
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    
-
-
-
 }
