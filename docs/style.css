@@ -8,6 +8,7 @@
     padding: 0;
     overflow-x: hidden;
     
+    
 }
 
 html body{
@@ -146,7 +147,7 @@ body{
     display: flex;
     padding: 10px;
     background-image: linear-gradient(rgba(214, 79, 0, 0.6), rgba(151, 81, 0, 0.3));
-    
+    min-height: 100vh;
     position: relative;
     align-items: center;
     justify-content: center;
