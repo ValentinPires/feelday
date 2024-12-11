@@ -96,6 +96,7 @@ body{
     text-align: center;
     padding: 50px 20px;
     width: 100%;
+
     
 }
 
@@ -196,35 +197,24 @@ body{
     
     justify-content:center;
     align-items: center;
-    margin: 0 150px;
-
+    margin: 0 125px;
+    gap: 20px;
    
 }
 
 .producto{
-   /* text-align: center;
-    padding: 25px;
-    margin: 0 auto;
-    box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 25px;
-    width: 100%;
-    max-width: 300px;
-    min-width: 200px;
-    height: auto;*/
-    width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
-    max-width: 300px; /* Limita el ancho máximo del contenedor */
-    height: auto; /* Deja que la altura se ajuste automáticamente */
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     margin: 0 auto;
     box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
-    position: relative;
-    max-width: 300px; /* Limita el ancho máximo del contenedor */
-    min-width: 200px;
-    
+
+    width: 100%;
+
+    height: auto;
+ 
+    object-fit:contain;
 }
 
 
@@ -857,110 +847,35 @@ link h3{
   }
   
  
-
-
-/* General: Adaptación para dispositivos móviles */
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px; /* Agregar espacio lateral en dispositivos más pequeños */
+  @media (max-width: 991px) {
+    .catalogo{
+        padding: 30px;
     }
 
-    .compra h2 {
-        font-size: 18px;
-        margin-bottom: 20px;
+    .product-content h2{
+        padding: 0;
     }
 
-    .btn-wsp {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        font-size: 25px;
-        bottom: 20px;
-        right: 20px;
+    .producto p, .producto h3 , .producto h4{
+        padding: 0;
     }
 
-    #body-compra main {
-        flex-direction: column; /* Cambiar a columna para mejor visualización en móviles */
-    }
-
-    #body-compra .img-cama-frente,
-    #body-compra .img-silla-frente {
-        max-width: 100%; /* Asegurar que las imágenes no excedan el ancho de la pantalla */
-    }
-
-    .header-content h1 {
-        font-size: 40px; /* Reducir el tamaño del encabezado */
-        line-height: 50px;
-        padding: 0 20px;
-    }
-
-    .header-content p {
-        font-size: 18px;
-        padding: 0 15px;
-    }
-
-    .product-content h2 {
-        font-size: 35px;
-        padding: 0 15px;
-    }
-
-    .product-group {
+    .product-group{
         flex-direction: column;
-        gap: 20px; /* Reducir la separación entre productos */
+        margin-bottom: 0;
     }
 
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
+    .producto{
+        width: 100%;
+        min-width: 231px;
     }
 
-    .navbar ul li {
-        float: none;
-    }
-
-    .navbar ul li a {
-        padding: 10px;
-        font-size: 16px;
+    .product-group{
+        margin: auto;
     }
 
     
+
 }
 
-/* General: Adaptación para tabletas */
-@media (max-width: 1024px) {
-    .container {
-        max-width: 90%; /* Ajustar el contenedor para tabletas */
-    }
 
-    #body-compra main {
-        gap: 20px; /* Reducir la separación en la estructura principal */
-    }
-
-    .header-content h1 {
-        font-size: 60px; /* Ajustar el tamaño del encabezado */
-    }
-
-    .btn-metodo-pago button {
-        width: 100%; /* Botones de pago adaptados al ancho disponible */
-    }
-
-    .product-group {
-        gap: 50px; /* Ajustar el espacio entre productos */
-    }
-}
-
-/* Consultas específicas para pantallas más grandes */
-@media (min-width: 1200px) {
-    .catalogo {
-        padding: 120px 0; /* Espaciado adicional para pantallas más grandes */
-    }
-
-    .product-content h2 {
-        font-size: 60px;
-    }
-
-    .product-group {
-        gap: 400px; /* Espaciar más los elementos en pantallas grandes */
-    }
-}
