@@ -14,7 +14,7 @@ html body{
         overflow-x: hidden; /* Elimina el scroll horizontal */
         box-sizing: border-box;
         height: 100%;
-    
+        max-width: 100%;
     
 }
 
@@ -145,11 +145,13 @@ body{
     display: flex;
     padding: 10px;
     background-image: linear-gradient(rgba(214, 79, 0, 0.6), rgba(151, 81, 0, 0.3));
-    width: 100%;
+    
     position: relative;
     align-items: center;
     justify-content: center;
-        text-align: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .product-content{
