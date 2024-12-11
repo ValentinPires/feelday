@@ -149,7 +149,7 @@ body{
     padding: 10px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(214, 79, 0, 0.6), rgba(151, 81, 0, 0.3));
-    min-height: 100vh;
+    
     
     position: relative;
     align-items: center;
@@ -197,11 +197,11 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 150px;
+
    
 }
 
 .producto{
-    
     text-align: center;
     padding: 25px;
     margin: 0 auto;
@@ -209,8 +209,9 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     min-width: 200px;
+    
 }
 
 
