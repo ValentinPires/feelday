@@ -202,10 +202,6 @@ body{
 }
 
 .producto{
-    width: 100vw; /* El contenedor ocupa el 100% del ancho de la ventana */
-    height: 100vh; /* El contenedor ocupa el 100% de la altura de la ventana */
-
-
     text-align: center;
     padding: 25px;
     margin: 0 auto;
@@ -241,7 +237,6 @@ body{
 
 .producto img{
     width: 100%; 
-    max-width: 100%; 
     height: auto;
     border: 2px solid #e2e0e0; /* Opcional: Añade un borde si quieres */
     border-radius: 10px; /* Opcional: Bordes redondeados */
