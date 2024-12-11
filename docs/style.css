@@ -893,9 +893,14 @@ link h3{
         font-size: 16px;
     }
 
+    .product-group{
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+
     .producto{
-        height: auto;
-        width: 100%;
+        width: 90%; /* Se ajusta al ancho del contenedor */
+        margin: auto; /* Centra el rectángulo */
+        height: auto; /* Evita aplanarlo */
     }
     
 }
