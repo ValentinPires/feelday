@@ -142,6 +142,7 @@ body{
     background-image: linear-gradient(rgba(214, 79, 0, 0.6), rgba(151, 81, 0, 0.3));
 
     position: relative;
+    
 }
 
 .product-content{
@@ -178,13 +179,15 @@ body{
 .product-group{
     padding: 0;
     display: flex;
-    justify-content: center;
     
+    justify-content: center;
+    align-items: center;
     margin: 0 150px;
    
 }
 
 .producto{
+    
     text-align: center;
     padding: 25px;
     margin: 0 auto;
@@ -193,6 +196,7 @@ body{
     border-radius: 25px;
     width: 100%;
     max-width: 350px;
+    min-width: 300px;
 }
 
 
@@ -893,15 +897,7 @@ link h3{
         font-size: 16px;
     }
 
-    .product-group{
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-    }
 
-    .producto{
-        width: 90%; /* Se ajusta al ancho del contenedor */
-        margin: auto; /* Centra el rectángulo */
-        height: auto; /* Evita aplanarlo */
-    }
     
 }
 
