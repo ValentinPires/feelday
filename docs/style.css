@@ -10,13 +10,10 @@
 }
 
 html body{
-   
-        margin: 0;
-        padding: 0;
         width: 100%;
         overflow-x: hidden; /* Elimina el scroll horizontal */
         box-sizing: border-box;
-        zoom: 1;
+        height: 100%;
     
     
 }
@@ -145,12 +142,14 @@ body{
 /*Productos*/
 
 .catalogo{
-    
+    display: flex;
     padding: 10px;
     background-image: linear-gradient(rgba(214, 79, 0, 0.6), rgba(151, 81, 0, 0.3));
     width: 100%;
     position: relative;
-    
+    align-items: center;
+    justify-content: center;
+        text-align: center;
 }
 
 .product-content{
