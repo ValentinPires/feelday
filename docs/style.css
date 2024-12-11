@@ -894,7 +894,7 @@ link h3{
         font-size: 16px;
     }
 
-    .product-group {
+    .producto{
         grid-template-columns: 1fr; /* Una sola columna */
     }
     
