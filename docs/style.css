@@ -194,7 +194,7 @@ body{
     padding: 0;
     display: flex;
     
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     margin: 0 150px;
 
@@ -202,7 +202,7 @@ body{
 }
 
 .producto{
-    text-align: center;
+   /* text-align: center;
     padding: 25px;
     margin: 0 auto;
     box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
@@ -211,7 +211,19 @@ body{
     width: 100%;
     max-width: 300px;
     min-width: 200px;
-    height: auto;
+    height: auto;*/
+    width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo del contenedor */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    text-align: center;
+    padding: 25px;
+    margin: 0 auto;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    position: relative;
+    max-width: 300px; /* Limita el ancho máximo del contenedor */
+    min-width: 200px;
     
 }
 
@@ -241,7 +253,6 @@ body{
     border: 2px solid #e2e0e0; /* Opcional: Añade un borde si quieres */
     border-radius: 10px; /* Opcional: Bordes redondeados */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    
 }
 
 .producto-img{
