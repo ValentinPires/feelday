@@ -4,18 +4,19 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    
-}
-
-html body{
     margin: 0;
     padding: 0;
     
 }
 
+html body{
+    overflow-x: hidden;
+    
+}
+
 body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    
 }
 
 
@@ -159,6 +160,14 @@ body{
    
 }
 
+.caracteristicas {
+    border: 2px solid #ccc;  /* Ajusta el grosor, tipo y color del borde */
+    padding: 20px;  /* Agrega un poco de espacio interno alrededor del contenido */
+    border-radius: 10px;  /* Opcional: Bordes redondeados */
+    background-color: #fff;  /* Opcional: Fondo blanco para que se distinga más el borde */
+}
+
+
 .txt-p{
     font-size: 16px;
     color: #414247;
@@ -170,9 +179,8 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
-
     
-    
+    margin: 0 150px;
    
 }
 
@@ -210,7 +218,7 @@ body{
 
 .producto img{
     width: 100%; 
-    max-width: 300px; 
+    max-width: 100%; 
     height: auto;
     border: 2px solid #e2e0e0; /* Opcional: Añade un borde si quieres */
     border-radius: 10px; /* Opcional: Bordes redondeados */
@@ -589,19 +597,30 @@ padding: 30px 0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #ead3ff;
     overflow-x: hidden;
 }
 
 #fotos-producto .product-container{
     display: grid;
+    
+    justify-content: center; /* Centra las imágenes */
+    background-color: rgb(223, 223, 223);
+}
+
+#fotos-producto .product-photos{
+    display: grid;
     grid-template-columns: auto auto;
     gap: 15px;
     width: 100%;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center; /* Centra las imágenes */
- 
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px; /
+    background-color: white; /* Fondo blanco */
+    border: 2px solid #e4d5f1; /* Borde gris alrededor del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 
@@ -625,7 +644,7 @@ padding: 30px 0;
     position: relative; /* Para posicionar el texto debajo de la imagen */
     width: 100%; /* Ajusta el tamaño de las fotos según lo necesites */
     text-align: center; /* Centra el texto debajo de la imagen */
-    width: 220px; 
+    max-width: 220px; 
     object-fit: cover;
     border: 2px solid #e2e0e0; /* Opcional: Añade un borde si quieres */
   border-radius: 10px; /* Opcional: Bordes redondeados */
@@ -633,8 +652,9 @@ padding: 30px 0;
 }
 
 #fotos-producto .product-container button{
+    
     padding: 1rem;
-    width: 100%;
+    width: auto;
     background-color: #33c3f0;
     border: none;
     outline: none;
@@ -644,6 +664,7 @@ padding: 30px 0;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 5px;
+    border-radius: 25px;
 }
 
 #fotos-producto .product-container button:hover{
@@ -653,10 +674,16 @@ padding: 30px 0;
 
 
 
+#fotos-producto .product-buttons{
+    display: flex;
+    justify-content: center;
+}
+
 /* Estilo para el botón */
 .volver-al-inicio {
-    display: inline-block;
-    padding: 15px 30px;
+    max-width:200px;
+    width: auto;
+    padding: 1rem;
     background: linear-gradient(145deg, #6a7dff, #4c63cc); /* Fondo con gradiente */
     color: white;
     text-decoration: none;
@@ -668,7 +695,7 @@ padding: 30px 0;
     transition: all 0.3s ease; /* Transición suave para los efectos */
     cursor: pointer;
     text-align: center;
-    width: auto;
+   
   }
   
   /* Efecto hover */
