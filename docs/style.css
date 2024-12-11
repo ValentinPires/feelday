@@ -211,9 +211,8 @@ body{
     border-radius: 25px;
 
     width: 100%;
-
-    height: auto;
- 
+    max-width: 300px;
+    min-height: 860px;
     object-fit:contain;
 }
 
@@ -847,7 +846,19 @@ link h3{
   }
   
  
-  @media (max-width: 991px) {
+  @media (max-width: 850px) {
+
+    .menu-container .navbar{
+        
+        top: 100%;
+       left: 0;
+       right: 0;
+       
+
+
+    }
+
+
     .catalogo{
         padding: 30px;
     }
@@ -866,7 +877,7 @@ link h3{
     }
 
     .producto{
-        width: 100%;
+        width: 90%;
         min-width: 231px;
     }
 
