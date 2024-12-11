@@ -38,14 +38,13 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        height: 100vh;
+        height: 400px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        
-   
+    
         
         
 }
@@ -137,7 +136,7 @@ body{
 /*Productos*/
 
 .catalogo{
-    padding: 100px 0;
+    padding: 10px;
     background-image: linear-gradient(rgba(214, 79, 0, 0.6), rgba(151, 81, 0, 0.3));
 
     position: relative;
@@ -145,15 +144,18 @@ body{
 
 .product-content{
     text-align: center;
+    padding: 0;
 }
 
 .product-content h2{
-    font-size: 55px;
-    line-height: 70px;
+    margin: 10px;
+    font-size: 50px;
+    line-height: 1.5;
     color: #323337;
     text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
+  
+
+   
 }
 
 .txt-p{
@@ -164,10 +166,11 @@ body{
 }
 
 .product-group{
+    padding: 0;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    gap: 20px;
+
+    
     
    
 }
@@ -175,10 +178,11 @@ body{
 .producto{
     text-align: center;
     padding: 25px;
+    margin: 0 auto;
     box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: hsl(78, 100%, 79%);
+    background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
-    width: 90%;
+    width: 100%;
     max-width: 350px;
     
 }
@@ -207,6 +211,9 @@ body{
     width: 100%; 
     max-width: 300px; 
     height: auto;
+    border: 2px solid #e2e0e0; /* Opcional: Añade un borde si quieres */
+    border-radius: 10px; /* Opcional: Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -588,20 +595,12 @@ padding: 30px 0;
 #fotos-producto .product-container{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
-    padding: 20px;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center; /* Centra las imágenes */
-   
-}
-
-#fotos-producto .product-info {
-    text-align: center;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 
 
@@ -609,6 +608,11 @@ padding: 30px 0;
     margin: 0; /* Márgenes para separar el texto de la imagen */
   padding: 10px;
   font-size: 18px; /* Tamaño de fuente ajustable */
+  text-align: center;
+
+  max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  width: 100%;
+
   color: #333; /* Color de texto */
   background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
   border-radius: 5px; /* Bordes redondeados para el texto */
@@ -618,18 +622,13 @@ padding: 30px 0;
 
 #fotos-producto .product-info img{
     position: relative; /* Para posicionar el texto debajo de la imagen */
-  width: 100%; /* Ajusta el tamaño de las fotos según lo necesites */
-  text-align: center; /* Centra el texto debajo de la imagen */
-  height: auto;
-}
-
-#fotos-producto .product-info img{
-    width: 250px; 
-    height: 250px; 
+    width: 100%; /* Ajusta el tamaño de las fotos según lo necesites */
+    text-align: center; /* Centra el texto debajo de la imagen */
+    width: 220px; 
     object-fit: cover;
-    border: 2px solid #e2e0e0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e2e0e0; /* Opcional: Añade un borde si quieres */
+  border-radius: 10px; /* Opcional: Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Opcional: Sombras para estilo */
 }
 
 #fotos-producto .product-container button{
