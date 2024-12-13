@@ -983,17 +983,29 @@ link h3{
   @media (max-width: 850px) {
 
     .menu-container .navbar{
-        
+        position: absolute;
         top: 100%;
        left: 0;
        right: 0;
-       
-
-
+       background-color: 3f3f3f;
+       display: none;
     }
 
-    .header{
+    .menu-container .navbar ul li{
+        width: 100%;
+    }
+
+    .menu-container .navbar ul li a{
+        color: #ffffff;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    } 
+
+    .contenedor{
         padding: 30px;
+        margin: auto;
     }
 
     .header-content{padding: 30px;
@@ -1002,13 +1014,16 @@ link h3{
     .container{
         margin: auto;
         padding: 10px;
-        
+        flex-direction: column;
+        gap: 10px;
     }
        
     .container .product{
+        margin: 0 auto;
         width: 80%;
         margin:0 20px;
         min-width: 317px;
+
     }
 
     .catalogo{
@@ -1037,7 +1052,7 @@ link h3{
         margin: auto;
     }
 
-    
+      
 
 }
 
