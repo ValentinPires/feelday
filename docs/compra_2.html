@@ -8,163 +8,75 @@
     <script src="https://kit.fontawesome.com/d749f8daff.js" crossorigin="anonymous"></script>
 </head>
 <body id="body-compra">
-    <header>
-        <h1>Logo</h1>
-    </header>
 
-    <div class="container-title">Cama para mascota</div>
- 
+
+
     <main>
-        <div class="container-img">
-           <img src="imagenes/silla frente.jpg" alt="silla-frente" class="img-silla-frente">
-        </div>
-        <div class="container-info-product">
-            <div class="container-price">
+        <!-- Imagen del producto -->
+        <section class="container-img">
+            <img src="imagenes/silla angulo.jpg" alt="Cama vista desde el frente" class="img-cama-frente">
+        </section>
+
+        <!-- Información del producto -->
+        <section class="container-info-product">
+           
+
+            <!-- Descripción del producto -->
+            <div class="container-title">
+                <h1>Reposera plegable Brisa de Mar</h1>
+            </div>
+            <div class="container-description">
+                <div class="title-description">
+                    <h2>Descripción</h2>
+                    <div class="icons" aria-label="Desplegar descripción">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur autem voluptatum quia quidem inventore aliquid illum, obcaecati ad eos sunt quisquam, laborum culpa in iure explicabo quis odit sequi.</p>
+                </div>
+            </div>
+
+             <!-- Precio -->
+             <div class="container-price">
                 <span>$60.000</span>
             </div>
 
-
-
-
-
-            
-
-<!--movido de lugar--> 
-            <div class="container-description">
-                <div class="title-description">
-                    <h4>descripcion</h4>
-                    <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                      </svg></div>
-                </div>
-                <div class="text-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur autem voluptatum quia quidem inventore aliquid illum, obcaecati ad eos sunt quisquam, laborum culpa in iure explicabo quis odit sequi.
-                    </p>
-                </div>
-
-
-
-                
-
-
-
-
-
-                <h1>Elige tu método de pago</h1>
-                <div class="payment-buttons">
-                    <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
-                       class="payment-button card-payment" target="_blank">
-                        Pagar con Tarjeta
-                    </a>
-                    <a href="transferencia.html" 
-                       class="payment-button transfer-payment" target="_blank">
-                        Pagar con Transferencia
-                    </a>
-                </div>
-
-
-                
-                <div class="container-add-cart">
-                    <label for="quantity">Cantidad de productos:</label>
-                    <div class="container-quantity">
-                        <input type="number" name="" id=""
-                         placeholder="1" 
-                         value="1" min="1"
-                         class="input-quantity">
-    
-                        
-                        <!-- <button class="btn-add-cart">
-                            <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                              </svg></div>
-                              
-                              Añadir al carrito
-                         </button>-->
-    
-                    </div>
-                 </div>
-
-            <!--<div class="container-details-product">
-                <div class="form-group-1">
-                    <label for="colour">Metodo de pago</label>
-
-
-                    <div class="btn-metodo-pago">
-                <a href="compra.html">
-                    <button>Tranferencia</button>
-                  </a>
-                  <a href="compra.html">
-                    <button>tajeta</button>
-                  </a></div>-->
-
-
-
-
-
-                <!--<div class="form-group-2">
-                    <label for="tamanio">tamanio</label>
-                    <select name="tamanio" id="tamanio">
-                        <option disabled selected value="">
-                              Escoge una opcion
-                         </option>
-                        <option value="44">44</option>
-                        <option value="43">43</option>
-                        <option value="42">42</option>
-                    </select>
-                 </div>
-             </div>
-             <button class="btn-clean">Limpiar</button>-->
-
-
-             
-
-           
-<!--sacado de aca-->
-
-
-
-            <div class="container-additional-information">
-                <div class="title-additional-information">
-                    <h4>Informacion adcional</h4>
-                  <div class="icons">  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                      </svg></div>
-                </div>
-                <div class="text-addicional-information">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur autem voluptatum quia quidem inventore aliquid illum, obcaecati ad eos sunt quisquam, laborum culpa in iure explicabo quis odit sequi.
-                    </p>
-                </div>
+            <!-- Botones de pago -->
+            <h2>Elige tu método de pago</h2>
+            <div class="payment-buttons">
+                <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
+                   class="payment-button card-payment" target="_blank">
+                    Pagar con Tarjeta
+                </a>
+                <a href="transferencia.html" 
+                   class="payment-button transfer-payment" target="_blank">
+                    Pagar con Transferencia
+                </a>
+                <p class="discount-note"><span style="text-decoration: line-through; color: red;">$60.000</span> $54.000</p>
             </div>
 
 
-           </div>
-        </div>
+
+            <div class="title-description">
+               
+              
+            
+            </div>
+            <div class="text-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur autem voluptatum quia quidem inventore aliquid illum, obcaecati ad eos sunt quisquam, laborum culpa in iure explicabo quis odit sequi.</p>
+            </div>
+
+
+            <div class="volver-al-inicio">
+                <a href="index.html">
+                    Volver al inicio</a>
+           
+    </section>
+   
     </main>
 
-    <footer>
-        <p>footer</p>
-    </footer>
-<!--<form class="compra">
-    <section>
-        <h2>Información de Contacto</h2>
-        <input type="text" placeholder="Nombre Completo" required />
-        <input type="email" placeholder="Correo Electrónico" required />
-        <input type="tel" placeholder="Teléfono" />
-    </section>
-
-    <section>
-        <h2>Dirección de Envío</h2>
-        <input type="text" placeholder="Dirección" required />
-        <input type="text" placeholder="Ciudad" required />
-        <input type="text" placeholder="Código Postal" required />
-    </section>
-
-    <section>
-        <h2>Método de Pago</h2>
-        <select>
-            <option>Tarjeta de Crédito</option>
-            <option>Transferencia Bancaria</option>
-        </select>
-    </section>
-</form>-->
+    
 </body>
