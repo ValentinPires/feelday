@@ -982,6 +982,13 @@ link h3{
  
   @media (max-width: 850px) {
 
+    * {
+        border: none; /* Elimina los bordes de todos los elementos */
+        margin: 0;
+        padding: 0;
+      }
+
+
     .menu-container .navbar{
         position: absolute;
         top: 100%;
@@ -1024,6 +1031,10 @@ link h3{
         margin: 0 auto;
         width: 100%;
         gap: 20px;
+    }
+
+    .container .product img{
+        width: 60%;
     }
 
     .container .product h1{
