@@ -1010,7 +1010,10 @@ link h3{
 
       .product button {
         width: auto;
-        padding: 6px 8px; /* Botón más compacto */
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 8px 12px; /* Botón más compacto */
       }
 
 
