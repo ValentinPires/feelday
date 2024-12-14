@@ -1004,26 +1004,30 @@ link h3{
     } 
 
     .contenedor{
+        
         padding: 30px;
-        margin: auto;
+        margin: 0 auto;
     }
 
-    .header-content{padding: 30px;
+    .header-content{
+        padding: 30px;
     }
 
-    .container{
-        margin: auto;
-        padding: 10px;
+    .container  {
+        
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        align-items: center;
     }
        
     .container .product{
         margin: 0 auto;
-        width: 80%;
-        margin:0 20px;
-        min-width: 317px;
+        width: 100%;
+        gap: 20px;
+    }
 
+    .container .product h1{
+        padding: 0;
     }
 
     .catalogo{
