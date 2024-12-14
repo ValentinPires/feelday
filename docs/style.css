@@ -288,6 +288,14 @@ body{
     background-color: #fff;  /* Opcional: Fondo blanco para que se distinga más el borde */
 }
 
+.caracteristicas h4{
+    font-size: 1.6rem;
+}
+
+.caracteristicas p{
+    font-size: 1.2rem;
+}
+
 
 .txt-p{
     font-size: 16px;
@@ -316,8 +324,7 @@ body{
     border-radius: 25px;
 
     width: 100%;
-    max-width: 300px;
-    min-height: 860px;
+
     object-fit:contain;
 }
 
@@ -1046,6 +1053,7 @@ link h3{
 
     .container .product img{
         width: 50%;
+        min-width: 250px;
     }
 
     .container .product h1{
@@ -1094,7 +1102,9 @@ link h3{
         align-items: center;
       }
 
-
+      .caracteristicas{
+        padding: 0;
+      }
 }
 
 
