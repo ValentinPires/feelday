@@ -993,6 +993,8 @@ link h3{
   }
   
  
+
+
   @media (max-width: 850px) {
 
     * {
@@ -1035,7 +1037,7 @@ link h3{
     }
 
     .header-content{
-        padding: 30px;
+        padding: 15px;
     }
 
     .container  {
@@ -1058,7 +1060,13 @@ link h3{
 
     .container .product h1{
         padding: 0;
+        font-size: 0.8rem;
     }
+
+
+
+     
+    
 
     .catalogo{
         padding: 30px;
@@ -1069,6 +1077,7 @@ link h3{
     }
 
     .producto p, .producto h3 , .producto h4{
+        
         padding: 0;
     }
 
@@ -1079,7 +1088,7 @@ link h3{
 
     .producto{
         width: 90%;
-        min-width: 231px;
+        
     }
 
     .product-group{
@@ -1090,12 +1099,13 @@ link h3{
     .container  .product .detalles {
         display: flex;
         flex-direction: column; /* Organiza el nombre y el botón en columna */
-        justify-content: center; /* Centra verticalmente */
+        
+        margin: auto;
         
       }
 
       .container  .product {  
-        margin:0 70px;
+        
         width: auto;
         display: flex;
         flex-direction:row;
@@ -1103,7 +1113,7 @@ link h3{
       }
 
       .caracteristicas{
-        padding: 0;
+        
       }
 }
 
