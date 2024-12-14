@@ -993,9 +993,9 @@ link h3{
   }
   
  
-
-
+ 
   @media (max-width: 850px) {
+
 
     * {
         border: none; /* Elimina los bordes de todos los elementos */
@@ -1004,8 +1004,13 @@ link h3{
       }
 
 
-     .header .header-content h2{
+      .header .header-content h2{
         margin-top: 0;
+      }
+
+      .product button {
+        width: auto;
+        padding: 6px 10px; /* Botón más compacto */
       }
 
 
@@ -1054,13 +1059,14 @@ link h3{
     }
 
     .container .product img{
-        width: 50%;
-        min-width: 250px;
+        width: 70%;
+        
     }
 
     .container .product h1{
         padding: 0;
         font-size: 0.8rem;
+        
     }
 
 
@@ -1087,7 +1093,7 @@ link h3{
     }
 
     .producto{
-        width: 90%;
+        width: 100%;
         
     }
 
@@ -1101,7 +1107,7 @@ link h3{
         flex-direction: column; /* Organiza el nombre y el botón en columna */
         
         margin: auto;
-        
+        width: 40%;
       }
 
       .container  .product {  
@@ -1112,8 +1118,8 @@ link h3{
         align-items: center;
       }
 
-      .caracteristicas{
-        
+      .product button{
+        width: auto;
       }
 }
 
