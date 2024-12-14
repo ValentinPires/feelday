@@ -78,17 +78,17 @@ body{
     max-width: 90%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+  
   }
 
   .container .product h1 {
     font-size: 1rem;
-    margin-bottom: 10px;
+
   }
 
   .container .product p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+   
   }
 
   .container .product button {
@@ -225,7 +225,7 @@ body{
 }
 
 .header-content h2{
-    padding-top: 50px;
+    margin-top: 50px;
     font-size: 70px;
   
     color: #f9fafc;
@@ -989,6 +989,11 @@ link h3{
       }
 
 
+     .header .header-content h2{
+        margin-top: 0;
+      }
+
+
     .menu-container .navbar{
         position: absolute;
         top: 100%;
@@ -1029,12 +1034,12 @@ link h3{
        
     .container .product{
         margin: 0 auto;
-        width: 60%;
+        width: 50%;
         gap: 20px;
     }
 
     .container .product img{
-        width: 90%;
+        width: 100%;
     }
 
     .container .product h1{
