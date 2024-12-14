@@ -1012,8 +1012,8 @@ link h3{
 
     .contenedor{
         
-        padding: 30px;
-        margin: 0 auto;
+        
+        margin: auto;
     }
 
     .header-content{
@@ -1021,7 +1021,7 @@ link h3{
     }
 
     .container  {
-        
+        margin: auto;
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -1029,12 +1029,12 @@ link h3{
        
     .container .product{
         margin: 0 auto;
-        width: 100%;
+        width: 60%;
         gap: 20px;
     }
 
     .container .product img{
-        width: 60%;
+        width: 90%;
     }
 
     .container .product h1{
