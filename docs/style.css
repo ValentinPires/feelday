@@ -1010,7 +1010,7 @@ link h3{
 
       .product button {
         width: auto;
-        padding: 6px 10px; /* Botón más compacto */
+        padding: 6px 8px; /* Botón más compacto */
       }
 
 
@@ -1054,7 +1054,7 @@ link h3{
        
     .container .product{
         margin: 0 auto;
-        width: 50%;
+        width: auto;
         gap: 20px;
     }
 
@@ -1118,9 +1118,7 @@ link h3{
         align-items: center;
       }
 
-      .product button{
-        width: auto;
-      }
+      
 }
 
 
