@@ -435,6 +435,12 @@ body{
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    
+}
+
+#body-compra .main{
+    flex-direction: column;
+    display: flex;
 }
 
 /* Contenedor de la imagen principal */
@@ -706,6 +712,11 @@ body{
   /* Centra el contenido */
     flex-wrap: wrap; /* Permite que los botones se adapten en pantallas pequeñas */
     margin-top: 20px;
+    gap: 20px;
+}
+
+#discount{
+    display: inline-flex;
 }
 
 .payment-option {
@@ -1191,36 +1202,81 @@ link{
         width: 40%;
       }
 
-
-      .payment-section{
-        flex-direction: flex;
-        gap: 20px;
-      }
-
-      .container  .product {  
-        
-        width: auto;
-        display: flex;
-        flex-direction:row;
-        align-items: center;
-      }
-
-     .payment-option {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-wrapper {
-        align-items: center; /* Centrar texto y precio */
-    }
-
-    .discount-text {
-        text-align: center;
-    }
-
-    .price-tag {
-        text-align: center;
     }
 
 
+      @media (max-width: 1100px) {
+
+
+        #trasferencia-bancaria{
+            display: flex; /* Activa Flexbox */
+            align-items: center; /* Alinea verticalmente el botón y el texto */
+            gap: 10px; /* Espacio entre el botón y el texto */
+        }
+    /* Estilo para el contenedor principal */
+#body-compra .main {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    gap: 10px; /* Espacio entre los cuadrados */
+    align-items: center;
+}
+
+/* Sección de pago en fila con separación */
+.payment-section {
+    display: flex; /* Asegura que es flex */
+    flex-direction: row; /* Elementos en fila */
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+}
+
+/* Contenedor de información del producto */
+.container-info-product {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    gap: 10px; /* Espacio entre elementos */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+}
+
+/* Contenedor de productos */
+.container .product {
+    display: flex; /* Elementos flexibles */
+    flex-direction: row; /* Elementos en fila */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    width: 100%; /* Asegura ancho completo */
+}
+
+/* Opciones de pago */
+.payment-option {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 5px;
+}
+
+/* Envoltura de información */
+.info-wrapper {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+/* Texto del descuento */
+.discount-text p{
+    color: rgb(10, 201, 26);
+    font-style: italic;
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño de letra */
+}
+
+/* Precio */
+.price-tag {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 18px; /* Tamaño del precio */
+}
   }
