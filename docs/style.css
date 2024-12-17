@@ -232,7 +232,8 @@ body{
 
 .header-content h2{
     margin-top: 50px;
-    font-size: 70px;
+    margin-bottom: 10px;
+    font-size: 60px;
   
     color: #f9fafc;
     text-transform: uppercase;
@@ -271,9 +272,10 @@ body{
 }
 
 .product-content h2{
-    margin: 10px;
-    font-size: 50px;
-    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    
     color: #323337;
     text-transform: uppercase;
   
@@ -294,6 +296,7 @@ body{
 
 .caracteristicas p{
     font-size: 1.2rem;
+    
 }
 
 
@@ -889,11 +892,18 @@ body{
 .footer{
     padding: 100px 0;
     background-color: #000000;
+    
 }
 
 .footer-content{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+link{
+
 }
 
 link h3{
