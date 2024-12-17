@@ -407,6 +407,7 @@ body{
     font-size: 30px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
+    overflow: hidden;
 }
 .btn-wsp:hover{
     text-decoration: none;
@@ -696,6 +697,25 @@ body{
 
 .card-payment {
     background-color: #3483FA; /* Azul Mercado Pago */
+    
+    
+}
+
+.payment-section{
+    display: flex; /* Coloca los botones uno al lado del otro */
+  /* Centra el contenido */
+    flex-wrap: wrap; /* Permite que los botones se adapten en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+.payment-option {
+    text-align: center; /* Centra el botón y el texto */
+ 
+}
+.payment-option p{
+    font-size: 14px;
+    color: #666; /* Gris para el texto */
+    font-style: italic; /* Opcional: estilo cursiva */
 }
 
 .transfer-payment {
@@ -704,6 +724,14 @@ body{
 
 .payment-button:hover {
     opacity: 0.9;
+}
+
+.discount-note{
+    font-size: 16px;
+   
+
+    display: block; /* Asegura que quede en una nueva línea */
+    margin-top: 5px;
 }
 
 
@@ -903,7 +931,7 @@ link{
     
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacio entre los divs */
+    gap: 25px; /* Espacio entre los divs */
    
 }
 
@@ -924,12 +952,16 @@ link{
 .icon{
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#instagram-icon, #facebook-icon{
+   
+    overflow: hidden;
+}
 
 
 .icon-item p {
@@ -1005,7 +1037,8 @@ link{
       }
 
       .header .header-content h2{
-        margin-top: 0;
+        margin:15px;
+        font-size: 55px;
       }
 
       .product button {
@@ -1158,6 +1191,12 @@ link{
         width: 40%;
       }
 
+
+      .payment-section{
+        flex-direction: flex;
+        gap: 20px;
+      }
+
       .container  .product {  
         
         width: auto;
@@ -1166,71 +1205,22 @@ link{
         align-items: center;
       }
 
-      #body-compra .container-img {
-         text-align: center;
-        width: 70%;
-        margin-top: 0;
-}
+     .payment-option {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .info-wrapper {
+        align-items: center; /* Centrar texto y precio */
+    }
 
+    .discount-text {
+        text-align: center;
+    }
 
-
-#body-compra main {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.container-info-product {
-    flex: unset;
-    align-items: center;
-}
-
-.container-price span {
-    font-size: 20px;
-}
-
-#body-compra .container-title {
-    margin-top: 10px;
-}
-
-.container-title h1{
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.container-add-cart {
-    max-width: 90%;
-    margin: 20px auto;
-}
-
-.btn-add-cart {
-    width: 100%;
-    font-size: 18px;
-    padding: 12px;
-}
-
-.payment-buttons {
-    
-    align-items: center;
-}
-
-.payment-button {
-    display: inline-block;
-    padding: 10px 15px; /* Ajustar el tamaño del botón */
-    font-size: 14px; /* Reducir el tamaño del texto */
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    width: 48%; 
-}
-
-.quantity input[type="number"] {
-    font-size: 18px;
-}
+    .price-tag {
+        text-align: center;
+    }
 
 
   }
