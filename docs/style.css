@@ -211,9 +211,9 @@ body{
 #menu{
     display: none;
 }
-/*
-.menu-icono{
-    width: 25px;
+
+/*.menu-icono{
+    display: none;
 }
 
 .menu label{
@@ -555,44 +555,6 @@ body{
     font-style: italic;
 }
 
-/* Media Queries para diseño responsivo */
-@media (max-width: 768px) {
-    #body-compra main {
-        flex-direction: column;
-    }
-
-    #body-compra .form-group label {
-        width: 80px;
-    }
-
-    #body-compra .form-group select {
-        width: 100%;
-    }
-
-    #body-compra .btn-clean {
-        margin-left: 0;
-        text-align: right;
-    }
-}
-
-@media (max-width: 480px) {
-    #body-compra {
-        padding: 10px;
-    }
-
-    #body-compra .container-title {
-        font-size: 18px;
-    }
-
-    #body-compra .form-group {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #body-compra .form-group select {
-        width: 100%;
-    }
-}
 
 
 
@@ -844,8 +806,11 @@ body{
 
 /* Estilo para el botón */
 .volver-al-inicio {
+    display: inline-block;
+    padding: 12px 18px; /* Ajustar el tamaño del botón */
+    font-size: 14px; /* Reducir el tamaño del texto */
+    font-family: Arial, sans-serif;
 
-    padding: 15px;
     width: auto;
     border: none;
     outline: none;
@@ -900,13 +865,14 @@ body{
     justify-content:space-between;
     padding-left: 20px;
     padding-right: 20px;
+    gap: 20px;
 }
 
 link{
 
 }
 
-link h3{
+.link h3{
     font-size: 18px;
     color: #f9fafc;
     margin-bottom: 15px;
@@ -1003,7 +969,14 @@ link h3{
   }
   
  
- 
+  @media (min-width: 850px) {
+    .menu-icono {
+        display: none; /* Oculta el ícono en pantallas grandes */
+    }
+}
+
+
+
   @media (max-width: 850px) {
 
 
@@ -1013,6 +986,23 @@ link h3{
         padding: 0;
       }
 
+
+      #quienes-somos p{
+        padding: 0;
+    }
+
+    #quienes-somos h1{
+        padding: 0;
+    }
+
+      .header-content{
+        padding: 100px 30px;
+      }
+
+      .header{
+       min-height: 0vh;
+        width: 100%;
+      }
 
       .header .header-content h2{
         margin-top: 0;
@@ -1027,31 +1017,76 @@ link h3{
       }
 
 
-    .menu-container .navbar{
-        position: absolute;
-        top: 100%;
-       left: 0;
-       right: 0;
-       background-color: 3f3f3f;
-       display: none;
+      .menu-icono {
+        
+        position: absolute; /* Fija el ícono en su lugar */
+        top: 20px; /* Ajusta la distancia desde la parte superior */
+        right: 20px; /* Ajusta la distancia desde la parte derecha */
+        width: 30px; /* Ajusta el tamaño del ícono */
+        height: auto;
+        z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
     }
+    
 
-    .menu-container .navbar ul li{
-        width: 100%;
-    }
-
-    .menu-container .navbar ul li a{
-        color: #ffffff;
-    }
-
-    #menu:checked ~ .navbar{
+      .menu-container label{
         display: initial;
-    } 
+      
+
+      }
+
+      /* Estilo de la lista de enlaces */
+
+#menu{
+    display: none;
+}
+
+.menu-container{
+    width: 100%;
+    padding: 30px;
+ 
+    
+  }
+
+.menu-container .navbar{
+    
+    width: 100%;
+    height: auto;
+    top: 100%;
+   left: 0;
+   right: 0;
+   background-color: #3f3f3f;
+   display: none;
+   transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+   
+
+}
+
+.menu-container .navbar ul li{
+    width: 100%;
+}
+
+.menu-container .navbar ul {
+
+    width: 100%;
+    height: 100%;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+} 
+
+
+
+
+
+
+
 
     .contenedor{
         
         
-        margin: auto;
+      
     }
 
     .header-content{
@@ -1131,7 +1166,71 @@ link h3{
         align-items: center;
       }
 
-      
+      #body-compra .container-img {
+         text-align: center;
+        width: 70%;
+        margin-top: 0;
 }
 
 
+
+
+#body-compra main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-info-product {
+    flex: unset;
+    align-items: center;
+}
+
+.container-price span {
+    font-size: 20px;
+}
+
+#body-compra .container-title {
+    margin-top: 10px;
+}
+
+.container-title h1{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.container-add-cart {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.btn-add-cart {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.payment-buttons {
+    
+    align-items: center;
+}
+
+.payment-button {
+    display: inline-block;
+    padding: 10px 15px; /* Ajustar el tamaño del botón */
+    font-size: 14px; /* Reducir el tamaño del texto */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 48%; 
+}
+
+.quantity input[type="number"] {
+    font-size: 18px;
+}
+
+
+  }
