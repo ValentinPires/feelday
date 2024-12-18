@@ -21,7 +21,7 @@
             background-color: #f9f9f9;
         }
         .container {
-            gap: 8px;
+            gap: 10px;
             padding: 20px;
             margin: 25px auto;
             background: #fff;
@@ -30,18 +30,23 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             flex-direction: column;
         }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
+        /* Efecto hover */
+  .volver-al-inicio:hover {
+    background: linear-gradient(145deg, #4c63cc, #6a7dff); /* Cambio de gradiente al pasar el ratón */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.4); /* Aumento de las sombras */
+    transform: translateY(-3px); /* Efecto de movimiento hacia arriba */
+  }
+  
+  /* Efecto active (cuando se hace clic en el botón) */
+  .volver-al-inicio:active {
+    transform: translateY(0); /* Elimina el movimiento cuando se hace clic */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Efecto de presionado */
+  }
+  
+  /* Estilo para colocar el botón en la esquina inferior derecha */
+  .volver-al-inicio.fixed {
+    
+  }
     </style>
 </head>
 <body>
@@ -50,15 +55,14 @@
         <p>Para completar tu compra, realiza una transferencia utilizando los siguientes datos:</p>
         <hr>
         <p><strong>Beneficiario:</strong> Edgardo Pires</p>
-        <p><strong>Banco:</strong> Banco Nación</p>
         <p><strong>CBU/CVU:</strong> 0000003100051713289251</p>
         <p><strong>Alias:</strong> edgardopires</p>
-        <p><strong>CUIT:</strong> </p>
+
         <hr>
       
         <hr>
-        <p>Envía el comprobante a whatsapp: 2914494246</p>
-        <a href="index.html" class="btn">Volver al inicio</a>
+        <p>Envía el comprobante a whatsapp: <a href="https://wa.me/+542914494246" target="_blank"><strong>2914494246</strong></a></p>
+        <a href="index.html" class="volver-al-inicio">Volver al inicio</a>
     </div>
 </body>
 </html>
