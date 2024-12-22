@@ -911,15 +911,15 @@ body{
     max-width: 700px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 25px; /* Espacio entre los divs */
-   
+  
 }
 
 .icon-item{
-   
+   gap: 5px;
     display: flex;
     align-items: center; /* Alinea los elementos verticalmente */
    /* Espacio entre el ícono y el texto */
@@ -952,7 +952,10 @@ body{
     font-size: 1.2em;
 }
 
-
+#contacto-inicio-button{
+    
+    
+}
 
 
 
