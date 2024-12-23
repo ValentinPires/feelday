@@ -682,7 +682,9 @@ body{
     transform: all .3s;
 }
 
-
+.pagagar-tarjeta{
+    display: flex;
+}
 
 .payment-buttons {
     display: flex;
@@ -713,11 +715,16 @@ body{
   /* Centra el contenido */
     flex-wrap: wrap; /* Permite que los botones se adapten en pantallas pequeñas */
     margin-top: 20px;
+    gap: 25px;
+}
+
+.opciones-pago{
     gap: 20px;
 }
 
 #discount{
     display: inline-flex;
+    margin-top: 15px;
 }
 
 .payment-option {
