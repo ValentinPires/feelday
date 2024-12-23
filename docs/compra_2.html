@@ -11,7 +11,7 @@
 
 
 
-    <main">
+    <main" id="main-compra">
         <!-- Imagen del producto -->
         <section class="container-img">
             <img src="imagenes/silla angulo.jpg" alt="Cama vista desde el frente" class="img-cama-frente">
@@ -34,56 +34,63 @@
 
             <!-- Botones de pago -->
             <h2>Elige tu método de pago</h2>
-            <div class="pagar-tarjeta">
-                <div class="payment-section">
-                    <div class="payment-option">
-                    <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
-                    class="payment-button card-payment" target="_blank">
-                        Pagar con Tarjeta<br>
-                        <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> Envio gratis!</span>
-                    </a>
-                </div>
 
-                <div class="payment-option">
-                        <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
-                        class="payment-button card-payment" target="_blank">
-                            Pagar con Tarjeta<br>
-                            <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> -10% retirando!</span>
-                    </a>
+            <div class="pago-mp">
+                <div class="botones-de-pago">
+
+                <div class="pagar-tarjeta">
+                    <div class="payment-section">
+                        <div class="payment-option">
+                            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
+                            class="payment-button card-payment" target="_blank">
+                                Pagar con Tarjeta<br>
+                                <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> Envio gratis!</span>
+                            </a>
+                        </div>
+                    </div>
+               
+                
+                    <div class="payment-section">
+                        <div class="payment-option">
+                            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
+                            class="payment-button card-payment" target="_blank">
+                                Pagar con Tarjeta<br>
+                                <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> -10% retirando!</span>
+                        </a>
+                        </div>
+                    </div>
+
                 </div>
+    
+             
+                <p> Pago por link de Mercado Pago</p>
             </div>
 
-                <p> Pago por link de Mercado Pago</p>
-                
+                <div class="payment-option" id="transferencia">
 
-                 <div class="payment-option" id="discount">
+                    <div class="boton-transferencia">
                     <a href="transferencia.html" 
                        class="payment-button transfer-payment" target="_blank">
-                        Pagar con Transferencia <br>
-                    
+                        Pagar con Transferencia 
+                        
                     </a>
                     <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> 5% de descuento$ <br>
-                                                                                            Retirando 5% + 10%$</span> 
-                    
-                   </div>
-
-                   <div class="payment-option">
-
+                                                                                                Retirando 5% + 10%$</span> 
+                     </div>   
                 
+                    
+                </div>
             </div>
-        </div>
-    </div>
-
-          
-            <div class="volver-al-inicio" id="boton-compra-inicio">
-                <a href="index.html">
-                    Volver al inicio</a>
-            </div>
-           
-    </section>
-   
-   
-    </main>
-
+        
+                <div class="volver-al-inicio" id="boton-compra-inicio">
+                    <a href="index.html">
+                        Volver al inicio</a>
+                </div>
+               
+        </section>
+       
+       
+        </main>
     
-</body>
+        
+    </body>

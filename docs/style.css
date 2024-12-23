@@ -320,6 +320,10 @@ body{
 }
 
 .producto{
+
+    
+   
+
     text-align: center;
     padding: 15px;
     margin: 0 auto;
@@ -328,7 +332,7 @@ body{
     border-radius: 25px;
 
     width: 100%;
-
+    
     object-fit:contain;
 }
 
@@ -365,6 +369,11 @@ body{
     position: absolute;
     top: 0;
     right: 0;
+}
+
+
+.product-price p{
+    font-size:larger;
 }
 
 .producto h3{
@@ -432,16 +441,17 @@ body{
 
 /* Contenedor principal */
 #body-compra {
-    max-width: 1200px;
+   
+
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     
 }
 
-#body-compra .main{
-    flex-direction: column;
+#main-compra{
     display: flex;
+    gap:20px;
 }
 
 /* Contenedor de la imagen principal */
@@ -483,6 +493,10 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+#body-compra .container-info-product h2{
+    margin-bottom:10px ;
 }
 
 #body-compra .container-info-product .volver-al-inicio{
@@ -710,21 +724,37 @@ body{
     
 }
 
-.payment-section{
-    display: flex; /* Coloca los botones uno al lado del otro */
-  /* Centra el contenido */
-    flex-wrap: wrap; /* Permite que los botones se adapten en pantallas pequeñas */
-    margin-top: 20px;
-    gap: 25px;
+
+.pagar-tarjeta{
+    display: flex;
+    gap: 20px;
+}
+
+.pago-link-mp{
+    text-align: center;
 }
 
 .opciones-pago{
     gap: 20px;
 }
 
-#discount{
-    display: inline-flex;
-    margin-top: 15px;
+.botones-de-pago{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#transferencia{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.boton-transferencia{
+   display: flex;
+   align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
 }
 
 .payment-option {
@@ -752,7 +782,6 @@ body{
     display: block; /* Asegura que quede en una nueva línea */
     margin-top: 5px;
 }
-
 
 
 
@@ -1199,10 +1228,23 @@ body{
         width: 40%;
       }
 
+
+
+   
+
     }
 
 
-      @media (max-width: 1100px) {
+      @media (max-width: 800px) {
+
+
+
+        #main-compra {
+            display: flex;
+            flex-direction: column; /* Alinea los elementos en columna */
+            gap: 10px; /* Espacio entre los cuadrados */
+            align-items: center;
+        }
 
 
         #trasferencia-bancaria{
@@ -1211,12 +1253,7 @@ body{
             gap: 10px; /* Espacio entre el botón y el texto */
         }
     /* Estilo para el contenedor principal */
-#body-compra .main {
-    display: flex;
-    flex-direction: column; /* Alinea los elementos en columna */
-    gap: 10px; /* Espacio entre los cuadrados */
-    align-items: center;
-}
+
 
 /* Sección de pago en fila con separación */
 .payment-section {
@@ -1246,12 +1283,7 @@ body{
 }
 
 /* Opciones de pago */
-.payment-option {
-    display: flex;
-    flex-direction: column; /* Elementos en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    gap: 5px;
-}
+
 
 /* Envoltura de información */
 .info-wrapper {
@@ -1275,5 +1307,10 @@ body{
     color: black;
     text-align: center;
     font-size: 18px; /* Tamaño del precio */
+}
+
+#transferencia{
+    display: flex;
+    justify-content: center;
 }
   }
