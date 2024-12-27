@@ -85,7 +85,7 @@
 </head>
 <body>
     <h1>Completa tus datos</h1>
-    <form id="formularioCompra">
+    <form id="formularioCompra" action="test_mail.php" method="POST">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
       <br>
@@ -94,6 +94,14 @@
       <input type="email" id="email" name="email" required>
       <br>
   
+      <label for="direccion">Telefono:</label>
+      <input type="text" id="direccion" name="direccion" required>
+      <br>
+
+      <label for="direccion">Codigo postal:</label>
+      <input type="text" id="direccion" name="direccion" required>
+      <br>
+
       <label for="direccion">Dirección:</label>
       <input type="text" id="direccion" name="direccion" required>
       <br>
@@ -133,4 +141,8 @@
         window.location.href = linkDePago;
       });
     </script>
+
+
+
+
   </body>
