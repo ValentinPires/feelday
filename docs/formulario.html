@@ -108,6 +108,8 @@
   
      
       <button type="submit">Enviar</button>
+
+      <input type="hidden" name="_next" value="compra_1.html">
     
 
     </form>
@@ -116,28 +118,26 @@
      
      
   
-      // Validar y procesar el formulario
-      document.getElementById('formularioCompra').addEventListener('submit', function(event) {
-        event.preventDefault();
-  
-        // Validación simple
-        const nombre = document.getElementById('nombre').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const direccion = document.getElementById('direccion').value.trim();
-  
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-             alert('Por favor, ingresa un correo válido.');
-            return;
-        }
+     document.getElementById('formularioCompra').addEventListener('submit', function(event) {
+  // Validación de los campos
+  const nombre = document.getElementById('nombre').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const direccion = document.getElementById('direccion').value.trim();
 
-        if (!nombre || !email || !direccion) {
-          alert('Por favor, completa todos los campos.');
-          return;
-        }
-  
-       
-      });
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Por favor, ingresa un correo válido.');
+    event.preventDefault();  // Solo previene si el correo no es válido
+    return;
+  }
+
+  if (!nombre || !email || !direccion) {
+    alert('Por favor, completa todos los campos.');
+    event.preventDefault();  // Solo previene si los campos no están completos
+    return;
+  }
+  // Si todo es válido, se envía el formulario
+});
     </script>
 
 
