@@ -85,7 +85,7 @@
 </head>
 <body>
     <h1>Completa tus datos</h1>
-    <form id="formularioCompra" action="test_mail.php" method="POST">
+    <form id="formularioCompra" action="https://formsubmit.co/feeldaynow@gmail.com" method="POST" >
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
       <br>
@@ -95,11 +95,11 @@
       <br>
   
       <label for="direccion">Telefono:</label>
-      <input type="text" id="direccion" name="direccion" required>
+      <input type="text" id="telefono" name="telefono" required>
       <br>
 
       <label for="direccion">Codigo postal:</label>
-      <input type="text" id="direccion" name="direccion" required>
+      <input type="text" id="codigo-postal" name="codigo-postal" required>
       <br>
 
       <label for="direccion">Dirección:</label>
@@ -107,7 +107,7 @@
       <br>
   
       <input type="hidden" id="producto" name="producto">
-      <button type="submit">Continuar al Pago</button>
+      <button type="submit">Enviar</button>
     </form>
   
     <script>
@@ -136,9 +136,7 @@
           return;
         }
   
-        // Redirigir al pago
-        const linkDePago = `https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=TU_PREFERENCE_ID`;
-        window.location.href = linkDePago;
+       
       });
     </script>
 
