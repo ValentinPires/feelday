@@ -131,15 +131,14 @@
             method: 'POST',
             body: formData,
         })
-            .then(response => { setTimeout(function(){
+            .then(response => {
                 if (response.ok) {
                     // Redirigir al link de pago
                     window.location.href = linkPago;
                 } else {
                     alert('Error al enviar el formulario. Inténtalo nuevamente.');
                 }
-            } ,2000);
-          })
+            })
             .catch(error => {
                 console.error('Error:', error);
                 alert('Error al enviar el formulario. Inténtalo nuevamente.');
