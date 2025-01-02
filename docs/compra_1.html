@@ -44,8 +44,8 @@
                 <div class="pagar-tarjeta">
                     <div class="payment-section">
                         <div class="payment-option">
-                            <a href="formulario.html" 
-                            class="payment-button card-payment" target="_blank">
+                            <a href="https://mpago.la/1zt3i3L" 
+                            class="payment-button card-payment" target="_blank" id="btnProducto">
                                 Pagar con Tarjeta<br>
                                 <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> Envio gratis!</span>
                             </a>
@@ -53,10 +53,10 @@
                     </div>
                
                 
-                    <div class="payment-section">
-                        <div class="payment-option">
-                            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
-                            class="payment-button card-payment" target="_blank">
+                    <div class="pagar-tranferencia">
+                        <div class="payment-section" id="transferencia">
+                            <a href="https://mpago.la/2W1rApC" 
+                            class="payment-button card-payment" target="_blank" id="btnProducto">
                                 Pagar con Tarjeta<br>
                                 <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> -10% retirando!</span>
                         </a>
@@ -73,7 +73,7 @@
 
                     <div class="boton-transferencia">
                     <a href="transferencia.html" 
-                       class="payment-button transfer-payment" target="_blank">
+                       class="payment-button transfer-payment" target="_blank" id="btnProducto">
                         Pagar con Transferencia 
                         
                     </a>
@@ -90,10 +90,99 @@
                         Volver al inicio</a>
                 </div>
                
-        </section>
-       
+            </section>
        
         </main>
     
+        <script>
+            // Seleccionar todos los enlaces de pago (en lugar de botones)
+            const botonesPago = document.querySelectorAll('a[id^="btnProducto"]'); // Ahora seleccionamos enlaces <a> con id que empieza con "btnProducto"
         
+            botonesPago.forEach(function (boton) {
+                boton.addEventListener('click', function (event) {
+                    event.preventDefault();  // Evitar que el enlace se siga automáticamente
+                    const linkPago = boton.getAttribute('href'); // Obtener el enlace de pago del atributo href
+        
+                    // Redirigir al formulario, pasando el enlace de pago como parámetro en la URL
+                    window.location.href = `formulario.html?linkPago=${encodeURIComponent(linkPago)}`;
+                });
+            });
+        </script>
+    <style>
+        /* Reset básico */
+        body, h1, form, input, button {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        #formularioCompra{
+           margin: auto;
+        }
+    
+        /* Estilo general */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f7f7f7;
+    
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+    
+        h1 {
+          text-align: center;
+          color: #333;
+          margin-bottom: 20px;
+        }
+    
+        form {
+          background-color: white;
+          padding: 20px 30px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 400px;
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: bold;
+          color: #555;
+        }
+    
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+    
+        input:focus {
+          border-color: #007bff;
+          outline: none;
+          box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+        }
+    
+        button {
+          width: 100%;
+          background-color: #007bff;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+          background-color: #0056b3;
+        }
+      </style>
     </body>
+        
+  
