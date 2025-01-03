@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d749f8daff.js" crossorigin="anonymous"></script>
 </head>
+
 <body id="body-compra">
-
-
-
-    <main" id="main-compra">
+    <main id="main-compra">
         <!-- Imagen del producto -->
         <section class="container-img">
             <img src="imagenes/silla angulo.jpg" alt="Cama vista desde el frente" class="img-cama-frente">
@@ -19,17 +17,9 @@
 
         <!-- Información del producto -->
         <section class="container-info-product">
-           
-
             <!-- Descripción del producto -->
             <div class="container-title">
-                <h1>Reposera plegable Brisa de Mar</h1>
-            </div>
-         
-
-             <!-- Precio -->
-             <div class="container-price">
-                <span>$60.000</span>
+                <h1>Reposera Brisa de Mar</h1>
             </div>
 
             <!-- Botones de pago -->
@@ -37,60 +27,155 @@
 
             <div class="pago-mp">
                 <div class="botones-de-pago">
+                    <div class="pagar-tarjeta">
+                        <div class="payment-section">
+                            <div class="payment-option">
+                                <a href="https://mpago.la/1KNetaN" class="payment-button card-payment" target="_blank" id="btnProducto">
+                                    Pagar con Tarjeta<br>
+                                    <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> Envío gratis!</span>
+                                </a>
+                                <!-- Precio -->
+                                <div class="container-price">
+                                    <span style="font-size: 20px; color: #000000; font-style: italic;">
+                                        $59.284 
+                                        
+                                    </span>
+                                  
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="pagar-tarjeta">
-                    <div class="payment-section">
-                        <div class="payment-option">
-                            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
-                            class="payment-button card-payment" target="_blank">
-                                Pagar con Tarjeta<br>
-                                <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> Envio gratis!</span>
-                            </a>
+                        <div class="payment-section" id="transferencia">
+                            <div class="payment-option">
+                                <a href="https://mpago.la/1CPJDRC" class="payment-button card-payment" target="_blank" id="btnProducto">
+                                    Pagar con Tarjeta<br>
+                                    <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> -10% retirando!</span>
+                                </a>
+                                <!-- Precio -->
+                                <div class="container-price">
+                                    <span style="font-size: 20px; color: #000000; font-style: italic;">
+                                        $53.355
+                                       
+                                    </span>
+                                  
+                                </div>
+                            </div>
                         </div>
                     </div>
-               
-                
-                    <div class="payment-section">
-                        <div class="payment-option">
-                            <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?preference_id=YOUR_PREFERENCE_ID" 
-                            class="payment-button card-payment" target="_blank">
-                                Pagar con Tarjeta<br>
-                                <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> -10% retirando!</span>
-                        </a>
-                        </div>
-                    </div>
-
                 </div>
-    
-             
-                <p> Pago por link de Mercado Pago</p>
+
+                <p>Pago por link de Mercado Pago</p>
             </div>
 
-                <div class="payment-option" id="transferencia">
-
-                    <div class="boton-transferencia">
-                    <a href="transferencia.html" 
-                       class="payment-button transfer-payment" target="_blank">
-                        Pagar con Transferencia 
-                        
+            <div class="payment-option" id="transferencia">
+                <div class="boton-transferencia">
+                    <a href="transferencia.html" class="payment-button transfer-payment" target="_blank" id="btnProducto">
+                        Pagar con Transferencia
+                        <span style="font-size: 14px; color: #3d3d3d; font-style: italic;">
+                           <br> -5% de descuento! 
                     </a>
-                    <span style="font-size: 14px; color: #3d3d3d; font-style: italic;"> 5% de descuento$ <br>
-                                                                                                Retirando 5% + 10%$</span> 
-                     </div>   
-                
-                    
+                    <span style="font-size: 20px; color: #000000; font-style: italic;">
+                         $56.320 <br>
+                         <span style="font-size: 17px; color: #3d3d3d; font-style: italic;"> Retirando -10% </span>$50.320
+                    </span>
                 </div>
             </div>
-        
-                <div class="volver-al-inicio" id="boton-compra-inicio">
-                    <a href="index.html">
-                        Volver al inicio</a>
-                </div>
-               
+
+            <div class="volver-al-inicio" id="boton-compra-inicio">
+                <a href="index.html">Volver al inicio</a>
+            </div>
         </section>
-       
-       
-        </main>
+    </main>
+</body>
+    <script>
+        // Seleccionar todos los enlaces de pago (en lugar de botones)
+        const botonesPago = document.querySelectorAll('a[id^="btnProducto"]'); // Ahora seleccionamos enlaces <a> con id que empieza con "btnProducto"
     
+        botonesPago.forEach(function (boton) {
+            boton.addEventListener('click', function (event) {
+                event.preventDefault();  // Evitar que el enlace se siga automáticamente
+                const linkPago = boton.getAttribute('href'); // Obtener el enlace de pago del atributo href
+    
+                // Redirigir al formulario, pasando el enlace de pago como parámetro en la URL
+                window.location.href = `formulario.html?linkPago=${encodeURIComponent(linkPago)}`;
+            });
+        });
+    </script>
+<style>
+    /* Reset básico */
+    body, h1, form, input, button {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #formularioCompra{
+       margin: auto;
+    }
+
+    #transferencia{
+        align-items: center;
+    }
+
+    /* Estilo general */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
         
-    </body>
+    }
+
+    h1 {
+      
+      color: #333;
+      margin-bottom: 20px;
+      font-size:35px;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    input:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    }
+
+    button {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</body>

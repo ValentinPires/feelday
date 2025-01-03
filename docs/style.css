@@ -434,6 +434,9 @@ body{
 
 /**COMPRA¨*/
 /* Iconos generales */
+
+
+
 .icons {
     width: 20px;
     height: 20px;
@@ -442,7 +445,7 @@ body{
 /* Contenedor principal */
 #body-compra {
    
-
+    align-items: center;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -450,6 +453,8 @@ body{
 }
 
 #main-compra{
+    align-items: center;
+    justify-content: center;
     display: flex;
     gap:20px;
 }
@@ -457,12 +462,17 @@ body{
 /* Contenedor de la imagen principal */
 #body-compra .container-img {
     text-align: center;
-    margin-top: 50px;
+   
+}
+
+.container-info-product{
+    align-items: start;
 }
 
 /* Estilo de las imágenes principales */
 #body-compra .img-cama-frente,
 #body-compra .img-silla-frente {
+    margin: 0 auto;
     max-width: 400px;
     width: 100%; /* Ajusta al tamaño del contenedor */
     height: auto; /* Mantiene las proporciones */
@@ -482,10 +492,13 @@ body{
 
 /* Estructura principal */
 #body-compra main {
-    display: flex;
+ 
     flex-wrap: wrap; /* Permite adaptarse en pantallas pequeñas */
     gap: 30px;
-    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;    
 }
 
 /* Contenedor de información del producto */
@@ -505,11 +518,13 @@ body{
     text-align: center;
 }
 
+.pago-mp{text-align: center;}
+
 /* Precio del producto */
 #body-compra .container-price {
     padding-bottom: 20px;
     border-bottom: 1px solid #e4e4e4;
-    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
 }
@@ -745,8 +760,9 @@ body{
 }
 
 #transferencia{
+   
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
 }
 
 .boton-transferencia{
@@ -1244,6 +1260,7 @@ body{
             flex-direction: column; /* Alinea los elementos en columna */
             gap: 10px; /* Espacio entre los cuadrados */
             align-items: center;
+            justify-content: center;
         }
 
 
@@ -1258,7 +1275,7 @@ body{
 /* Sección de pago en fila con separación */
 .payment-section {
     display: flex; /* Asegura que es flex */
-    flex-direction: row; /* Elementos en fila */
+    flex-direction: column
     gap: 20px; /* Espacio entre elementos */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Alinea verticalmente */
